@@ -5,10 +5,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import requests
 from scipy.optimize import minimize
+import os
 
 plt.style.use('seaborn-v0_8-darkgrid')
 
-API_KEY = '1b4O2KMgMqrwfNlWXIGrstdW3lRjr0v8'
+API_KEY = os.getenv('API_KEY_FMP')
 BASE_URL = 'https://financialmodelingprep.com/api/v3'
 rf = 0.03
 
